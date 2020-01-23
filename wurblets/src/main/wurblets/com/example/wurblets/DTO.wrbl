@@ -38,16 +38,25 @@ int     count   the counter
     }
 
     // create constructor
+]@
+
+  /**
+   * Creates a @(getClassName())@.
+   *
+@[
     StringBuilder args = new StringBuilder();
     for (Property property: properties) {
       if (args.length() > 0) {
         args.append(", ");
       }
       args.append(property.getType()).append(' ').append(property.getName());
+]@
+   * \@param @(property.getName())@ @(property.getComment())@
+@[
     }
 ]@
-
-  public @(getClassName())@(@(args.toString())@) {
+   */
+  public @(getClassName())@(@(args)@) {
 @[
     for (Property property: properties) {
 ]@

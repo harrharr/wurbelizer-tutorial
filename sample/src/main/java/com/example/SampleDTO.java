@@ -25,6 +25,13 @@ public class SampleDTO {
   private final long id;  // the unique ID
   private final boolean enabled;  // whether enabled or not
 
+  /**
+   * Creates a SampleDTO.
+   *
+   * @param name the name
+   * @param id the unique ID
+   * @param enabled whether enabled or not
+   */
   public SampleDTO(String name, long id, boolean enabled) {
     this.name = name;
     this.id = id;
