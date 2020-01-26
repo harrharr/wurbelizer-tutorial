@@ -35,7 +35,7 @@
             </wurbletDependency>
           </wurbletDependencies>
           <wurbletPaths>
-            <param>com.example.wurblets</param>
+            <wurbletPath>com.example.wurblets</wurbletPath>
           </wurbletPaths>
         </configuration>
       </plugin>
